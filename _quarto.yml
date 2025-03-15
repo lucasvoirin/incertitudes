@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Incertitudes..."
+  subtitle: "ou ce que l'on a oublié sur les statistiques"
+  author: "Lucas Voirin"
+  date: "2025-01-09"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: lumen
+  pdf:
+    documentclass: scrreprt
+
+
+
