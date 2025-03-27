@@ -4,9 +4,13 @@ project:
 
 book:
   title: "Incertitudes..."
+  output-file: "incertitudes"
   subtitle: "ou ce que l'on a oublié sur les statistiques"
   author: "Lucas Voirin"
   date: "2025-01-09"
+  downloads: pdf
+  sidebar:
+    search: true
   chapters:
     - index.qmd
     - intro.qmd
@@ -18,8 +22,13 @@ bibliography: references.bib
 format:
   html:
     theme: lumen
+    fig-width: 6
+    fig-height: 3
+    mainfont: Inter
   pdf:
     documentclass: scrreprt
-
-
+    fig-width: 6
+    fig-height: 3
+    fontfamily: inter
+    mainfont: Inter
 

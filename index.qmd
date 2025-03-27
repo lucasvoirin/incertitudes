@@ -1,3 +1,39 @@
-# Préface {.unnumbered}
+# Avant-propos {.unnumbered}
 
+## Objectifs pédagogiques
 
+L'objectif principal de ce document est de présenter de manière intuitive les concepts fondamentaux des statistiques.
+Il ne s'agit tout au plus que d'un brouillon d'ébauche de livre.
+
+- Rédiger en français (pour s'inscrire dans une démarche d'ouverture de la science)
+- Présenter les concepts fondamentaux des statistiques
+- Adopter une approche intuitive et visuelle
+- Insister sur la notion de modèle (linéaire) et sa généralisation
+- Insister sur la notion d'incertitude
+- Insister sur la formulation mathématique des modèles
+
+## Public visé
+
+Ce document ne vise pas nécessairement un public n'ayant jamais suivi de cours de statistiques.
+Au contraire il est écrit pour s'adresser à des personnes ayant déjà eu des cours, qui se rappellent de quelques notions mais de manière floue ou incertaine.
+Pour autant, considérant les différences de niveau des personnes, il traite de concepts de base et devrait ainsi être accessible
+à toute personne découvrant les statistiques.
+
+## Conseils de lecture
+
+C'est vraiment important de lire les formules mathématiques et de les comprendre.
+On va commencer par des formules très simples et quand elles seront plus compliquées, on prendra le temps de les détailler.
+
+## Les données utilisées
+
+Les données utilisées pour illustrer les propos sont accessibles librement.
+
+Pour illustrer le contenu de ce livre, j'utilise le jeu de données provenant de la librairie `palmerpenguins` [@palmerpenguins].
+
+## Quelques inspirations
+
+Voici une liste de quelques livres qui m'inspirent pour rédiger ce document.
+
+- *Statistical modeling with R, a dual frequentist and bayesian approach for life scientists* de Pablo Inchausti (2023)
+- *Applied Statistical Modelling for Ecologists* de Marc Kéry et Kenneth F. Kellner (2024)
+- *The Order of the Statistical Jedi* de Dustin Fife (2022)

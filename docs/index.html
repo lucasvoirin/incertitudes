@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -38,10 +58,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c6bddabdf07953f7a8ac9a6b46bbb2a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -79,13 +99,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Préface</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Avant-propos</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -98,6 +118,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Incertitudes…</a> 
+        <div class="sidebar-tools-main">
+    <a href="./incertitudes.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -110,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Préface</span></a>
+ <span class="menu-text">Avant-propos</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -141,7 +164,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#préface" id="toc-préface" class="nav-link active" data-scroll-target="#préface">Préface</a></li>
+  <li><a href="#avant-propos" id="toc-avant-propos" class="nav-link active" data-scroll-target="#avant-propos">Avant-propos</a>
+  <ul class="collapse">
+  <li><a href="#objectifs-pédagogiques" id="toc-objectifs-pédagogiques" class="nav-link" data-scroll-target="#objectifs-pédagogiques">Objectifs pédagogiques</a></li>
+  <li><a href="#public-visé" id="toc-public-visé" class="nav-link" data-scroll-target="#public-visé">Public visé</a></li>
+  <li><a href="#conseils-de-lecture" id="toc-conseils-de-lecture" class="nav-link" data-scroll-target="#conseils-de-lecture">Conseils de lecture</a></li>
+  <li><a href="#les-données-utilisées" id="toc-les-données-utilisées" class="nav-link" data-scroll-target="#les-données-utilisées">Les données utilisées</a></li>
+  <li><a href="#quelques-inspirations" id="toc-quelques-inspirations" class="nav-link" data-scroll-target="#quelques-inspirations">Quelques inspirations</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -180,10 +210,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="préface" class="level1 unnumbered">
-<h1 class="unnumbered">Préface</h1>
+<section id="avant-propos" class="level1 unnumbered">
+<h1 class="unnumbered">Avant-propos</h1>
+<section id="objectifs-pédagogiques" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-pédagogiques">Objectifs pédagogiques</h2>
+<p>L’objectif principal de ce document est de présenter de manière intuitive les concepts fondamentaux des statistiques. Il ne s’agit tout au plus que d’un brouillon d’ébauche de livre.</p>
+<ul>
+<li>Rédiger en français (pour s’inscrire dans une démarche d’ouverture de la science)</li>
+<li>Présenter les concepts fondamentaux des statistiques</li>
+<li>Adopter une approche intuitive et visuelle</li>
+<li>Insister sur la notion de modèle (linéaire) et sa généralisation</li>
+<li>Insister sur la notion d’incertitude</li>
+<li>Insister sur la formulation mathématique des modèles</li>
+</ul>
+</section>
+<section id="public-visé" class="level2">
+<h2 class="anchored" data-anchor-id="public-visé">Public visé</h2>
+<p>Ce document ne vise pas nécessairement un public n’ayant jamais suivi de cours de statistiques. Au contraire il est écrit pour s’adresser à des personnes ayant déjà eu des cours, qui se rappellent de quelques notions mais de manière floue ou incertaine. Pour autant, considérant les différences de niveau des personnes, il traite de concepts de base et devrait ainsi être accessible à toute personne découvrant les statistiques.</p>
+</section>
+<section id="conseils-de-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="conseils-de-lecture">Conseils de lecture</h2>
+<p>C’est vraiment important de lire les formules mathématiques et de les comprendre. On va commencer par des formules très simples et quand elles seront plus compliquées, on prendra le temps de les détailler.</p>
+</section>
+<section id="les-données-utilisées" class="level2">
+<h2 class="anchored" data-anchor-id="les-données-utilisées">Les données utilisées</h2>
+<p>Les données utilisées pour illustrer les propos sont accessibles librement.</p>
+<p>Pour illustrer le contenu de ce livre, j’utilise le jeu de données provenant de la librairie <code>palmerpenguins</code> <span class="citation" data-cites="palmerpenguins">(<a href="references.html#ref-palmerpenguins" role="doc-biblioref">Horst, Hill, and Gorman 2020</a>)</span>.</p>
+</section>
+<section id="quelques-inspirations" class="level2">
+<h2 class="anchored" data-anchor-id="quelques-inspirations">Quelques inspirations</h2>
+<p>Voici une liste de quelques livres qui m’inspirent pour rédiger ce document.</p>
+<ul>
+<li><em>Statistical modeling with R, a dual frequentist and bayesian approach for life scientists</em> de Pablo Inchausti (2023)</li>
+<li><em>Applied Statistical Modelling for Ecologists</em> de Marc Kéry et Kenneth F. Kellner (2024)</li>
+<li><em>The Order of the Statistical Jedi</em> de Dustin Fife (2022)</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-palmerpenguins" class="csl-entry" role="listitem">
+Horst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. <em>Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data</em>. <a href="https://doi.org/10.5281/zenodo.3960218">https://doi.org/10.5281/zenodo.3960218</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -222,18 +291,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -265,7 +323,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -300,7 +396,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -348,7 +448,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -578,7 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Introduction</span>">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
         <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Incertitudes… - 1&nbsp; Introduction</title>
+<title>1&nbsp; Introduction – Incertitudes...</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c6bddabdf07953f7a8ac9a6b46bbb2a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -78,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -97,6 +126,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Incertitudes…</a> 
+        <div class="sidebar-tools-main">
+    <a href="./incertitudes.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Préface</span></a>
+ <span class="menu-text">Avant-propos</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -136,7 +168,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#cest-quoi-une-variable" id="toc-cest-quoi-une-variable" class="nav-link active" data-scroll-target="#cest-quoi-une-variable"><span class="header-section-number">1.1</span> C’est quoi une variable ?</a>
+  <ul class="collapse">
+  <li><a href="#différents-types-de-variables" id="toc-différents-types-de-variables" class="nav-link" data-scroll-target="#différents-types-de-variables"><span class="header-section-number">1.1.1</span> Différents types de variables</a></li>
+  <li><a href="#représenter-une-variable" id="toc-représenter-une-variable" class="nav-link" data-scroll-target="#représenter-une-variable"><span class="header-section-number">1.1.2</span> Représenter une variable</a></li>
+  </ul></li>
+  <li><a href="#cest-quoi-une-distribution" id="toc-cest-quoi-une-distribution" class="nav-link" data-scroll-target="#cest-quoi-une-distribution"><span class="header-section-number">1.2</span> C’est quoi une distribution ?</a></li>
+  <li><a href="#cest-quoi-un-modèle" id="toc-cest-quoi-un-modèle" class="nav-link" data-scroll-target="#cest-quoi-un-modèle"><span class="header-section-number">1.3</span> C’est quoi un modèle ?</a></li>
+  <li><a href="#la-moyenne-le-plus-simple-des-modèles" id="toc-la-moyenne-le-plus-simple-des-modèles" class="nav-link" data-scroll-target="#la-moyenne-le-plus-simple-des-modèles"><span class="header-section-number">1.4</span> La moyenne, le plus simple des modèles</a>
+  <ul class="collapse">
+  <li><a href="#la-variable-à-modéliser" id="toc-la-variable-à-modéliser" class="nav-link" data-scroll-target="#la-variable-à-modéliser"><span class="header-section-number">1.4.1</span> La variable à modéliser</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,8 +208,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Chapitre pour présenter les concepts de base et faire quelques rappels.</p>
+<section id="cest-quoi-une-variable" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="cest-quoi-une-variable"><span class="header-section-number">1.1</span> C’est quoi une variable ?</h2>
+<p>En science, c’est courant de mesurer des trucs.</p>
+<p>Mesurer un truc, c’est attribuer une valeur numérique à ce truc. Et les méthodes pour associer une valeur numérique à un truc sont nombreuses : on peut prendre une règle pour mesurer une distance, une balance pour mesurer une masse, un thermomètre pour mesurer une température, un sonomètre pour mesurer une intensité sonore…</p>
+<p>Une valeur numérique c’est pratique pour décrire un truc, mais on peut aussi “mesurer” ce truc avec des valeurs non numériques. Cela peut être la couleur, l’espèce ou n’importe quelle autre caractéristique du truc.</p>
+<p>En général, on ne se contente pas d’une seule mesure.</p>
+<p>On répète l’opération de mesure plusieurs fois, souvent dans des conditions différentes. On dit que l’on réalise des <strong>observations</strong>.</p>
+<p>Quand on a un ensemble de mesures, on parle alors de <strong>variable</strong>. Pourquoi ? Tout simplement parce que d’une observation à une autre, la valeur de la mesure peut <strong>varier</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Par exemple...">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Par exemple…
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On peut mesurer la longueur du bec de manchots : la variable s’appellerait <em>Taille du bec</em> et les valeurs de cette variable seraient exprimées de manière numérique en milimètres.</p>
+<p>On pourait aussi noter le nom de l’espèce de manchot : la variable serait <em>Espèce</em> et les valeurs de cette variable seraient par exemple les noms des différentes espèces.</p>
+<p>À chaque fois que l’on mesure la taille du bec et l’espèce sur un manchot différent, on réalise une nouvelle observation.</p>
+</div>
+</div>
+<p>Et il y a beaucoup de choses qui peuvent faire varier les valeurs de mesure (par exemple l’espèce sur laquelle on fait la mesure, la date à laquelle on fait la mesure…). En fait, les trucs qui peuvent faire varier les mesures d’une variable… sont des variables aussi !</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Par exemple...">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Par exemple…
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La longueur du bec de manchots peut varier en fonction de l’espèce de manchot sur laquelle on effectue la mesure ou en fonction du poids du manchot.</p>
+</div>
+</div>
+<section id="différents-types-de-variables" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="différents-types-de-variables"><span class="header-section-number">1.1.1</span> Différents types de variables</h3>
+<p>Il existe différents types de variables. Le type d’une variable est simplement le type de valeur dont la variable est composée.</p>
+<p>Si les valeurs composant la variable sont des <strong>catégories</strong> (nom d’espèce, couleur, sexe…) alors il s’agira d’une <strong>variable qualitative</strong>. On dit aussi variable catégorique.</p>
+<p>Si les valeurs composant la variable sont des <strong>nombres</strong> (distance, température, poids…), alors il s’agira d’une <strong>variable quantitative</strong>. On dit aussi variable numérique.</p>
+</section>
+<section id="représenter-une-variable" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="représenter-une-variable"><span class="header-section-number">1.1.2</span> Représenter une variable</h3>
+<p>histogramme, boxplot</p>
+</section>
+</section>
+<section id="cest-quoi-une-distribution" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="cest-quoi-une-distribution"><span class="header-section-number">1.2</span> C’est quoi une distribution ?</h2>
+<p>La distribution d’une variable, c’est la la description des probabilités d’obtenir chaque valeur que peut prendre la variable.</p>
+<p>En statistique on utilise souvent des lois pour décrire ces distributions.</p>
+</section>
+<section id="cest-quoi-un-modèle" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="cest-quoi-un-modèle"><span class="header-section-number">1.3</span> C’est quoi un modèle ?</h2>
+<p>C’est une représentation mathématique de la réalité. Quand on réalise des mesures sur le terrain, on considère que les valeurs mesurées sont la réalité. Le modèle, c’est l’objet mathématique qui va permettre de reproduire ces données.</p>
+<p>Un modèle est composé de deux parties :</p>
+<ul>
+<li><p>une partie déterministe, celle que l’on peut calculer avec des formules mathématiques</p></li>
+<li><p>une partie stochastique, que l’on ne sait pas prédire exactement mais dont on essaye définir le comportement général.</p></li>
+</ul>
+<p><span class="math display">\[
+y = \mu + \epsilon
+\]</span></p>
+<p><span class="math inline">\(\mu\)</span>, c’est la partie déterministe, on peut la calculer à partir d’une formule mathématique.</p>
+<p><span class="math inline">\(\epsilon\)</span>, c’est la partie stochastique. c’est le coeur des statistiques. On ne sait pas prédire cette valeur, mais tout l’enjeu est d’arriver à décrire son comportement.</p>
+</section>
+<section id="la-moyenne-le-plus-simple-des-modèles" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="la-moyenne-le-plus-simple-des-modèles"><span class="header-section-number">1.4</span> La moyenne, le plus simple des modèles</h2>
+<section id="la-variable-à-modéliser" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="la-variable-à-modéliser"><span class="header-section-number">1.4.1</span> La variable à modéliser</h3>
+<p>On s’intéresse à la taille du bec de manchots. C’est une variable que l’on note <span class="math inline">\(y\)</span>. Il s’agit de notre variable réponse, celle que l’on veut modéliser. <span class="math inline">\(y\)</span> est composée d’un ensemble de valeurs, chaque valeur est une mesure de la longueur du bec d’un manchot. <span class="math inline">\(y_1\)</span> correspond à la longueur du bec du premier manchot mesuré, <span class="math inline">\(y_2\)</span> celle du deuxième manchot et ainsi de suite.</p>
+<p><span class="math display">\[
+y =
+\begin{pmatrix}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n
+\end{pmatrix}
+\]</span></p>
+<p>Voici l’ensemble des mesures, représentées par des points dont la position sur l’axe des ordonnées donne la valeur de la mesure de longueur du bec. La position sur l’axe des abscisses est volontairement un peu différente pour chaque point, mais ça c’est juste pour pouvoir mieux voir l’ensemble des points.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="intro_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>On voit que les mesures de longueurs de bec vont de un peu plus de 30 mm à 60 mm, avec davantage de points entre 35 et 50 mm.</p>
+<p>La première chose que l’on pourrait faire avec l’ensemble de ces valeurs, c’est de calculer leur moyenne. Mathématiquement on note cette moyenne <span class="math inline">\(\bar{y}\)</span>.</p>
+<p>La moyenne des mesures de longueur de bec est de 42.7. Et c’est déjà un modèle de nos données !</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="intro_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="intro_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -199,18 +362,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -242,7 +394,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -277,7 +467,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -325,7 +519,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -553,12 +746,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link  aria-label=" préface"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Préface</span>
+      <a href="./index.html" class="pagination-link" aria-label="Avant-propos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Avant-propos</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Summary</span>">
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
         <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
