@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Summary – Incertitudes...</title>
+<title>2&nbsp; Anatomie d’un modèle – Incertitudes...</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./anatomie_modele.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./variables_distributions.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./summary.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./anatomie_modele.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Anatomie d’un modèle</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -123,13 +152,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./anatomie_modele.html" class="sidebar-item-text sidebar-link">
+  <a href="./anatomie_modele.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Anatomie d’un modèle</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link active">
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
@@ -144,15 +173,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#la-moyenne-le-plus-simple-des-modèles" id="toc-la-moyenne-le-plus-simple-des-modèles" class="nav-link active" data-scroll-target="#la-moyenne-le-plus-simple-des-modèles"><span class="header-section-number">2.1</span> La moyenne, le plus simple des modèles</a>
+  <ul class="collapse">
+  <li><a href="#la-variable-à-modéliser" id="toc-la-variable-à-modéliser" class="nav-link" data-scroll-target="#la-variable-à-modéliser"><span class="header-section-number">2.1.1</span> La variable à modéliser</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Anatomie d’un modèle</span></h1>
 </div>
 
 
@@ -169,9 +207,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In summary, this book has no content whatsoever.</p>
+<p>C’est une représentation mathématique de la réalité. Quand on réalise des mesures sur le terrain, on considère que les valeurs mesurées sont la réalité. Le modèle, c’est l’objet mathématique qui va permettre de reproduire ces données.</p>
+<p>Un modèle est composé de deux parties :</p>
+<ul>
+<li><p>une partie déterministe, celle que l’on peut calculer avec des formules mathématiques</p></li>
+<li><p>une partie stochastique, que l’on ne sait pas prédire exactement mais dont on essaye définir le comportement général.</p></li>
+</ul>
+<p><span class="math display">\[
+y = \mu + \epsilon
+\]</span></p>
+<p><span class="math inline">\(\mu\)</span>, c’est la partie déterministe, on peut la calculer à partir d’une formule mathématique.</p>
+<p><span class="math inline">\(\epsilon\)</span>, c’est la partie stochastique. c’est le coeur des statistiques. On ne sait pas prédire cette valeur, mais tout l’enjeu est d’arriver à décrire son comportement.</p>
+<section id="la-moyenne-le-plus-simple-des-modèles" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="la-moyenne-le-plus-simple-des-modèles"><span class="header-section-number">2.1</span> La moyenne, le plus simple des modèles</h2>
+<section id="la-variable-à-modéliser" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="la-variable-à-modéliser"><span class="header-section-number">2.1.1</span> La variable à modéliser</h3>
+<p>On s’intéresse à la taille du bec de manchots. C’est une variable que l’on note <span class="math inline">\(y\)</span>. Il s’agit de notre variable réponse, celle que l’on veut modéliser. <span class="math inline">\(y\)</span> est composée d’un ensemble de valeurs, chaque valeur est une mesure de la longueur du bec d’un manchot. <span class="math inline">\(y_1\)</span> correspond à la longueur du bec du premier manchot mesuré, <span class="math inline">\(y_2\)</span> celle du deuxième manchot et ainsi de suite.</p>
+<p><span class="math display">\[
+y =
+\begin{pmatrix}
+y_1 \\
+y_2 \\
+\vdots \\
+y_n
+\end{pmatrix}
+\]</span></p>
+<p>Voici l’ensemble des mesures, représentées par des points dont la position sur l’axe des ordonnées donne la valeur de la mesure de longueur du bec. La position sur l’axe des abscisses est volontairement un peu différente pour chaque point, mais ça c’est juste pour pouvoir mieux voir l’ensemble des points.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="anatomie_modele_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>On voit que les mesures de longueurs de bec vont de un peu plus de 30 mm à 60 mm, avec davantage de points entre 35 et 50 mm.</p>
+<p>La première chose que l’on pourrait faire avec l’ensemble de ces valeurs, c’est de calculer leur moyenne. Mathématiquement on note cette moyenne <span class="math inline">\(\bar{y}\)</span>.</p>
+<p>La moyenne des mesures de longueur de bec est de 42.7. Et c’est déjà un modèle de nos données !</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="anatomie_modele_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="anatomie_modele_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -593,13 +688,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./anatomie_modele.html" class="pagination-link" aria-label="Anatomie d'un modèle">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Anatomie d’un modèle</span></span>
+      <a href="./variables_distributions.html" class="pagination-link" aria-label="Variables et distributions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Variables et distributions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

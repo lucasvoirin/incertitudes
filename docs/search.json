@@ -60,63 +60,63 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "variables_distributions.html",
+    "href": "variables_distributions.html",
+    "title": "1  Variables et distributions",
     "section": "",
-    "text": "1.1 C’est quoi une variable ?\nChapitre pour présenter les concepts de base et faire quelques rappels.\nEn science, c’est courant de mesurer des trucs.\nMesurer un truc, c’est attribuer une valeur numérique à ce truc. Et les méthodes pour associer une valeur numérique à un truc sont nombreuses : on peut prendre une règle pour mesurer une distance, une balance pour mesurer une masse, un thermomètre pour mesurer une température, un sonomètre pour mesurer une intensité sonore…\nUne valeur numérique c’est pratique pour décrire un truc, mais on peut aussi “mesurer” ce truc avec des valeurs non numériques. Cela peut être la couleur, l’espèce ou n’importe quelle autre caractéristique du truc.\nEn général, on ne se contente pas d’une seule mesure.\nOn répète l’opération de mesure plusieurs fois, souvent dans des conditions différentes. On dit que l’on réalise des observations.\nQuand on a un ensemble de mesures, on parle alors de variable. Pourquoi ? Tout simplement parce que d’une observation à une autre, la valeur de la mesure peut varier.\nEt il y a beaucoup de choses qui peuvent faire varier les valeurs de mesure (par exemple l’espèce sur laquelle on fait la mesure, la date à laquelle on fait la mesure…). En fait, les trucs qui peuvent faire varier les mesures d’une variable… sont des variables aussi !",
+    "text": "1.1 C’est quoi une variable ?\nChapitre pour présenter le concept de variable, de distribution, de jeu de données.\nTODO: enlever la partie modélisation\nTODO: décrire progressivement la construction de la variable\nTODO: décrire la structure d’un jeu données et la façon de le représenter\nEn science, c’est courant de mesurer des trucs.\nMesurer un truc, c’est attribuer une valeur numérique à ce truc. Et les méthodes pour associer une valeur numérique à un truc sont nombreuses : on peut prendre une règle pour mesurer une distance, une balance pour mesurer une masse, un thermomètre pour mesurer une température, un sonomètre pour mesurer une intensité sonore…\nUne valeur numérique c’est pratique pour décrire un truc, mais on peut aussi “mesurer” ce truc avec des valeurs non numériques. Cela peut être la couleur, l’espèce ou n’importe quelle autre caractéristique du truc.\nEn général, on ne se contente pas d’une seule mesure.\nOn répète l’opération de mesure plusieurs fois, souvent dans des conditions différentes. On dit que l’on réalise des observations.\nQuand on a un ensemble de mesures, on parle alors de variable. Pourquoi ? Tout simplement parce que d’une observation à une autre, la valeur de la mesure peut varier.\nEt il y a beaucoup de choses qui peuvent faire varier les valeurs de mesure (par exemple l’espèce sur laquelle on fait la mesure, la date à laquelle on fait la mesure…). En fait, les trucs qui peuvent faire varier les mesures d’une variable… sont des variables aussi !",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Variables et distributions</span>"
     ]
   },
   {
-    "objectID": "intro.html#cest-quoi-une-variable",
-    "href": "intro.html#cest-quoi-une-variable",
-    "title": "1  Introduction",
+    "objectID": "variables_distributions.html#cest-quoi-une-variable",
+    "href": "variables_distributions.html#cest-quoi-une-variable",
+    "title": "1  Variables et distributions",
     "section": "",
     "text": "Par exemple…\n\n\n\nOn peut mesurer la longueur du bec de manchots : la variable s’appellerait Taille du bec et les valeurs de cette variable seraient exprimées de manière numérique en milimètres.\nOn pourait aussi noter le nom de l’espèce de manchot : la variable serait Espèce et les valeurs de cette variable seraient par exemple les noms des différentes espèces.\nÀ chaque fois que l’on mesure la taille du bec et l’espèce sur un manchot différent, on réalise une nouvelle observation.\n\n\n\n\n\n\n\n\n\nPar exemple…\n\n\n\nLa longueur du bec de manchots peut varier en fonction de l’espèce de manchot sur laquelle on effectue la mesure ou en fonction du poids du manchot.\n\n\n\n1.1.1 Différents types de variables\nIl existe différents types de variables. Le type d’une variable est simplement le type de valeur dont la variable est composée.\nSi les valeurs composant la variable sont des catégories (nom d’espèce, couleur, sexe…) alors il s’agira d’une variable qualitative. On dit aussi variable catégorique.\nSi les valeurs composant la variable sont des nombres (distance, température, poids…), alors il s’agira d’une variable quantitative. On dit aussi variable numérique.\n\n\n1.1.2 Représenter une variable\nhistogramme, boxplot",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Variables et distributions</span>"
     ]
   },
   {
-    "objectID": "intro.html#cest-quoi-une-distribution",
-    "href": "intro.html#cest-quoi-une-distribution",
-    "title": "1  Introduction",
+    "objectID": "variables_distributions.html#cest-quoi-une-distribution",
+    "href": "variables_distributions.html#cest-quoi-une-distribution",
+    "title": "1  Variables et distributions",
     "section": "1.2 C’est quoi une distribution ?",
     "text": "1.2 C’est quoi une distribution ?\nLa distribution d’une variable, c’est la la description des probabilités d’obtenir chaque valeur que peut prendre la variable.\nEn statistique on utilise souvent des lois pour décrire ces distributions.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Variables et distributions</span>"
     ]
   },
   {
-    "objectID": "intro.html#cest-quoi-un-modèle",
-    "href": "intro.html#cest-quoi-un-modèle",
-    "title": "1  Introduction",
-    "section": "1.3 C’est quoi un modèle ?",
-    "text": "1.3 C’est quoi un modèle ?\nC’est une représentation mathématique de la réalité. Quand on réalise des mesures sur le terrain, on considère que les valeurs mesurées sont la réalité. Le modèle, c’est l’objet mathématique qui va permettre de reproduire ces données.\nUn modèle est composé de deux parties :\n\nune partie déterministe, celle que l’on peut calculer avec des formules mathématiques\nune partie stochastique, que l’on ne sait pas prédire exactement mais dont on essaye définir le comportement général.\n\n\\[\ny = \\mu + \\epsilon\n\\]\n\\(\\mu\\), c’est la partie déterministe, on peut la calculer à partir d’une formule mathématique.\n\\(\\epsilon\\), c’est la partie stochastique. c’est le coeur des statistiques. On ne sait pas prédire cette valeur, mais tout l’enjeu est d’arriver à décrire son comportement.",
+    "objectID": "anatomie_modele.html",
+    "href": "anatomie_modele.html",
+    "title": "2  Anatomie d’un modèle",
+    "section": "",
+    "text": "2.1 La moyenne, le plus simple des modèles\nC’est une représentation mathématique de la réalité. Quand on réalise des mesures sur le terrain, on considère que les valeurs mesurées sont la réalité. Le modèle, c’est l’objet mathématique qui va permettre de reproduire ces données.\nUn modèle est composé de deux parties :\n\\[\ny = \\mu + \\epsilon\n\\]\n\\(\\mu\\), c’est la partie déterministe, on peut la calculer à partir d’une formule mathématique.\n\\(\\epsilon\\), c’est la partie stochastique. c’est le coeur des statistiques. On ne sait pas prédire cette valeur, mais tout l’enjeu est d’arriver à décrire son comportement.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Anatomie d'un modèle</span>"
     ]
   },
   {
-    "objectID": "intro.html#la-moyenne-le-plus-simple-des-modèles",
-    "href": "intro.html#la-moyenne-le-plus-simple-des-modèles",
-    "title": "1  Introduction",
-    "section": "1.4 La moyenne, le plus simple des modèles",
-    "text": "1.4 La moyenne, le plus simple des modèles\n\n1.4.1 La variable à modéliser\nOn s’intéresse à la taille du bec de manchots. C’est une variable que l’on note \\(y\\). Il s’agit de notre variable réponse, celle que l’on veut modéliser. \\(y\\) est composée d’un ensemble de valeurs, chaque valeur est une mesure de la longueur du bec d’un manchot. \\(y_1\\) correspond à la longueur du bec du premier manchot mesuré, \\(y_2\\) celle du deuxième manchot et ainsi de suite.\n\\[\ny =\n\\begin{pmatrix}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{pmatrix}\n\\]\nVoici l’ensemble des mesures, représentées par des points dont la position sur l’axe des ordonnées donne la valeur de la mesure de longueur du bec. La position sur l’axe des abscisses est volontairement un peu différente pour chaque point, mais ça c’est juste pour pouvoir mieux voir l’ensemble des points.\n\n\n\n\n\n\n\n\n\nOn voit que les mesures de longueurs de bec vont de un peu plus de 30 mm à 60 mm, avec davantage de points entre 35 et 50 mm.\nLa première chose que l’on pourrait faire avec l’ensemble de ces valeurs, c’est de calculer leur moyenne. Mathématiquement on note cette moyenne \\(\\bar{y}\\).\nLa moyenne des mesures de longueur de bec est de 42.7. Et c’est déjà un modèle de nos données !",
+    "objectID": "anatomie_modele.html#la-moyenne-le-plus-simple-des-modèles",
+    "href": "anatomie_modele.html#la-moyenne-le-plus-simple-des-modèles",
+    "title": "2  Anatomie d’un modèle",
+    "section": "",
+    "text": "2.1.1 La variable à modéliser\nOn s’intéresse à la taille du bec de manchots. C’est une variable que l’on note \\(y\\). Il s’agit de notre variable réponse, celle que l’on veut modéliser. \\(y\\) est composée d’un ensemble de valeurs, chaque valeur est une mesure de la longueur du bec d’un manchot. \\(y_1\\) correspond à la longueur du bec du premier manchot mesuré, \\(y_2\\) celle du deuxième manchot et ainsi de suite.\n\\[\ny =\n\\begin{pmatrix}\ny_1 \\\\\ny_2 \\\\\n\\vdots \\\\\ny_n\n\\end{pmatrix}\n\\]\nVoici l’ensemble des mesures, représentées par des points dont la position sur l’axe des ordonnées donne la valeur de la mesure de longueur du bec. La position sur l’axe des abscisses est volontairement un peu différente pour chaque point, mais ça c’est juste pour pouvoir mieux voir l’ensemble des points.\n\n\n\n\n\n\n\n\n\nOn voit que les mesures de longueurs de bec vont de un peu plus de 30 mm à 60 mm, avec davantage de points entre 35 et 50 mm.\nLa première chose que l’on pourrait faire avec l’ensemble de ces valeurs, c’est de calculer leur moyenne. Mathématiquement on note cette moyenne \\(\\bar{y}\\).\nLa moyenne des mesures de longueur de bec est de 42.7. Et c’est déjà un modèle de nos données !",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Anatomie d'un modèle</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {

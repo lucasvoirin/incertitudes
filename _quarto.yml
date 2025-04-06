@@ -7,13 +7,14 @@ book:
   output-file: "incertitudes"
   subtitle: "ou ce que l'on a oublié sur les statistiques"
   author: "Lucas Voirin"
-  date: "2025-01-09"
+  date: today
   downloads: pdf
   sidebar:
     search: true
   chapters:
     - index.qmd
-    - intro.qmd
+    - variables_distributions.qmd
+    - anatomie_modele.qmd
     - summary.qmd
     - references.qmd
 

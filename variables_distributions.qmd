@@ -1,0 +1,75 @@
+# Variables et distributions
+
+Chapitre pour présenter le concept de variable, de distribution, de jeu de données.
+
+TODO: enlever la partie modélisation
+
+TODO: décrire progressivement la construction de la variable
+
+TODO: décrire la structure d'un jeu données et la façon de le représenter
+
+## C'est quoi une variable ?
+
+En science, c'est courant de mesurer des trucs.
+
+Mesurer un truc, c'est attribuer une valeur numérique à ce truc.
+Et les méthodes pour associer une valeur numérique à un truc sont nombreuses :
+on peut prendre une règle pour mesurer une distance, une balance pour mesurer une masse, 
+un thermomètre pour mesurer une température, un sonomètre pour mesurer une intensité sonore...
+
+Une valeur numérique c'est pratique pour décrire un truc, mais on peut aussi "mesurer" 
+ce truc avec des valeurs non numériques. Cela peut être la couleur, l'espèce ou n'importe quelle autre caractéristique du truc.
+
+En général, on ne se contente pas d'une seule mesure.
+
+On répète l'opération de mesure plusieurs fois, souvent dans des conditions différentes.
+On dit que l'on réalise des **observations**.
+
+Quand on a un ensemble de mesures, on parle alors de **variable**.
+Pourquoi ? Tout simplement parce que d'une observation à une autre, la valeur de la mesure peut **varier**.
+
+:::{.callout-tip title="Par exemple..."}
+
+On peut mesurer la longueur du bec de manchots : 
+la variable s'appellerait *Taille du bec* et les valeurs de cette variable seraient exprimées de manière numérique en milimètres.
+
+\vspace{0.6em}
+
+On pourait aussi noter le nom de l'espèce de manchot : 
+la variable serait *Espèce* et les valeurs de cette variable seraient par exemple les noms des différentes espèces.
+
+\vspace{0.6em}
+
+À chaque fois que l'on mesure la taille du bec et l'espèce sur un manchot différent, on réalise une nouvelle observation.
+
+:::
+
+Et il y a beaucoup de choses qui peuvent faire varier les valeurs de mesure (par exemple l'espèce sur laquelle on fait la mesure, la date à laquelle on fait la mesure...).
+En fait, les trucs qui peuvent faire varier les mesures d'une variable... sont des variables aussi !
+
+:::{.callout-tip title="Par exemple..."}
+
+La longueur du bec de manchots peut varier en fonction de l'espèce de manchot sur laquelle on effectue la mesure ou en fonction du poids du manchot.
+
+:::
+
+### Différents types de variables
+
+Il existe différents types de variables. Le type d'une variable est simplement le type de valeur dont la variable est composée.
+
+Si les valeurs composant la variable sont des **catégories** (nom d'espèce, couleur, sexe...) alors il s'agira d'une **variable qualitative**. On dit aussi variable catégorique.
+
+Si les valeurs composant la variable sont des **nombres** (distance, température, poids...), alors il s'agira d'une **variable quantitative**. On dit aussi variable numérique.
+
+
+### Représenter une variable
+
+
+histogramme, boxplot
+
+## C'est quoi une distribution ?
+
+La distribution d'une variable, c'est la la description des probabilités d'obtenir chaque valeur que peut prendre la variable.
+
+En statistique on utilise souvent des lois pour décrire ces distributions.
+

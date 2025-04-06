@@ -10,5 +10,11 @@
   },
   "references.qmd": {
     "references.html": "54b03f90"
+  },
+  "variables_distributions.qmd": {
+    "variables_distributions.html": "e3fc5599"
+  },
+  "anatomie_modele.qmd": {
+    "anatomie_modele.html": "eee6bd46"
   }
 }
