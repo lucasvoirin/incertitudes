@@ -3,26 +3,40 @@ project:
   output-dir: docs
 
 book:
+  favicon: favicon.png
   title: "Incertitudes..."
   output-file: "incertitudes"
-  subtitle: "ou ce que l'on a oublié sur les statistiques"
   author: "Lucas Voirin"
   date: today
-  downloads: pdf
-  sidebar:
-    search: true
   chapters:
     - index.qmd
     - variables_distributions.qmd
     - anatomie_modele.qmd
     - summary.qmd
     - references.qmd
+  sidebar:
+    search: true
+    tools:
+      - text: Ouvrir la version pdf
+        icon: file-earmark-pdf-fill
+        href: https://lucasvoirin.github.io/incertitudes/incertitudes.pdf
+      - text: Ouvrir le repo github
+        icon: github
+        href: https://github.com/lucasvoirin/incertitudes 
+  # navbar:
+  #   background: primary
+  #   logo-href: https://lucasvoirin.github.io
+  #   title: Lucas Voirin
+  #   search: false
+  #   left:
+  #     - text: "Research"
+  #       href: https://lucasvoirin.github.io/research/
 
 bibliography: references.bib
 
 format:
   html:
-    theme: lumen
+    theme: cosmo
     fig-width: 6
     fig-height: 3
     mainfont: Inter
@@ -32,4 +46,3 @@ format:
     fig-height: 3
     fontfamily: inter
     mainfont: Inter
-
